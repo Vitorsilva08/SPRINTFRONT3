@@ -175,3 +175,12 @@ blockquote {
     padding-left: 20px;
     border-left: 3px solid var(--primary);
 }
+
+  footer {
+        background-color: var(--dark);
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        color: var(--gray);
+        border-top: 1px solid var(--gray);
+    }
