@@ -1,7 +1,8 @@
 :root{
     --primary: #0d5e94;
     --secondary:#2a177f;
-    --tertiary: #6a1414;
+    --tertiary: #2f2015d7;
+    --quartenary:#1e293b;
     --dark: #0b0c10;
     --light: #F1FAEE;
     --gray: #93a0b3;
@@ -177,23 +178,25 @@ blockquote {
 }
 
 .team {
-    background-color:rgb(8, 8, 56); 
+    background-color:var(--dark); 
     padding: 100px 20px;
 }
 
 .team_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px 20px;
+    gap: 50px 60px;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 50px 50px;
 }
+
 
 .team-card {
     position: relative;
     overflow: hidden;
     width: 100%;
-    border-radius: 10px;
+    
 }
 
 .img-t {
@@ -201,13 +204,20 @@ blockquote {
     height: 240px;
     object-fit: cover;
     display: block;
+    border-radius: 10px;
+    border: 2px solid var(--dark);
+}
+
+.img-t:hover,
+.img-t:focus {
+    border-color: var(--primary);
+    outline: none;
 }
 
 footer {
-        background-color: var(--dark);
+        background-color: var(--quartenary);
         text-align: center;
         padding: 20px;
         font-size: 0.9rem;
         color: var(--gray);
-        border-top: 1px solid var(--gray);
 }
