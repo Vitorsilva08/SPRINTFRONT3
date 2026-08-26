@@ -1,7 +1,7 @@
 :root{
     --primary: #0d5e94;
     --secondary:#2a177f;
-    --tertiary: #2f2015d7;
+    --tertiary: #212429;
     --quartenary:#1e293b;
     --dark: #0b0c10;
     --light: #F1FAEE;
@@ -158,6 +158,7 @@ h2 {
     font-weight: 400;
     margin: 0 0 20px;
     color: var(--light);
+    border-bottom: 2px solid var(--gray)
 }
 
 .text p {
@@ -213,9 +214,41 @@ blockquote {
     border-color: var(--primary);
     outline: none;
 }
+h3 {
+    font-family: var(--title);
+    text-transform: uppercase;
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    color: var(--light);
+    border-bottom: 1px solid var(--gray);
+}
+.alvo {
+    height: 80vh;
+    margin: 40px auto 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.steak {
+    min-height: 70px; 
+    padding: 30px;
+    font-family: var(--text);
+    letter-spacing: 3px;
+    border-radius: 100px;
+}
+
+.st1 {
+    background-color: var(--gray);
+}
+
+.st2 {
+    background-color: var(--primary);
+}
 
 footer {
-        background-color: var(--quartenary);
+        background-color: var(--tertiary);
         text-align: center;
         padding: 20px;
         font-size: 0.9rem;
