@@ -178,6 +178,56 @@ blockquote {
     border-left: 3px solid var(--primary);
 }
 
+
+
+#alvo {
+    display: flex;
+    align-items: flex-start;
+    padding: 100px 100px;
+    height: 100vh;
+}
+
+h3 {
+    font-family: var(--title);
+    text-transform: uppercase;
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    color: var(--light);
+    border-bottom: 1px solid var(--gray);
+}
+
+
+.publico-alvo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 80px;
+}
+
+.publico-texto p {
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0 0 15px;
+}
+
+
+.publico-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.publico-galeria img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
 .team {
     background-color:var(--dark); 
     padding: 100px 20px;
@@ -211,46 +261,21 @@ blockquote {
 
 .img-t:hover,
 .img-t:focus {
-    border-color: var(--primary);
-    outline: none;
+    outline: 2px solid blue;
 }
-h3 {
-    font-family: var(--title);
-    text-transform: uppercase;
-    font-size: 42px;
-    letter-spacing: 2px;
-    font-weight: 400;
-    margin: 0 0 20px;
-    color: var(--light);
-    border-bottom: 1px solid var(--gray);
-}
-.alvo {
-    height: 80vh;
-    margin: 40px auto 100px;
-    color: #fff;
-    text-align: center;
-}
-
-.steak {
-    min-height: 70px; 
-    padding: 30px;
-    font-family: var(--text);
-    letter-spacing: 3px;
-    border-radius: 100px;
-}
-
-.st1 {
-    background-color: var(--gray);
-}
-
-.st2 {
-    background-color: var(--primary);
-}
-
 footer {
         background-color: var(--tertiary);
         text-align: center;
         padding: 20px;
         font-size: 0.9rem;
         color: var(--gray);
+}
+
+
+@media (max-width: 768px) {
+
+    .publico-alvo {
+        grid-template-columns: 1fr;
+    }
+
 }

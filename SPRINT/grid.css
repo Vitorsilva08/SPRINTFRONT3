@@ -1,8 +1,0 @@
-.alvo-container {
-    display: grid;
-}
-
-.st {
-    grid-template-columns: 1fr 1fr;
-    padding: 90px;
-}
