@@ -18,65 +18,75 @@ body {
     font-size: 11px;
     letter-spacing: 1px;
 }
-#box {
-    height: auto !important;
-    min-height: 80vh;
-    padding: 40px 24px !important;
-    justify-content: center;
-    align-items: flex-end;
-    text-align: center;
-}
-h1 {
-    font-size: 42px !important;
-    letter-spacing: 1px;
-}
-h1 span {
-    font-size: 18px !important;
-    margin-top: 10px;
-}
-.box-desc {
-    max-width: 100% !important;
-    font-size: 15px;
-    margin: 20px 0 30px;
-}
-.btn {
-    width: 100%;
-    text-align: center;
-}
-.conteudo {
-    width: 100% !important;
-    grid-template-columns: 1fr !important;
-    gap: 45px;
-    padding: 70px 24px !important;
-}
+@media screen and (max-width: 768px) {
+    #box {
+        height: auto;
+        min-height: 80vh;
+        padding: 40px 24px;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+    }
 
-.img-c {
-    width: 100% !important;
-    max-width: 380px !important;
-    height: 380px !important;
-    margin: 0 auto;
-    box-shadow: none !important;
-}
+    h1 {
+        font-size: 42px;
+        letter-spacing: 1px;
+    }
 
-.text {
-    width: 100% !important;
-    max-width: 100% !important;
-    text-align: left;
-}
-h2,
-h3 {
-    font-size: 28px !important;
-    margin-bottom: 15px;
-}
-.text p {
-    font-size: 15px;
-    line-height: 1.7;
-}
+    h1 span {
+        font-size: 18px;
+        margin-top: 10px;
+    }
 
-blockquote {
-    font-size: 16px;
-    margin: 20px 0 0;
-    padding-left: 15px;
+    .box-desc {
+        max-width: 100%;
+        font-size: 15px;
+        margin: 20px 0 30px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .conteudo {
+        width: 100%;
+        flex-direction: column;
+        gap: 45px;
+        padding: 70px 24px;
+    }
+
+    .img-c {
+        width: 100%;
+        max-width: 380px;
+        height: 380px;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    h2,
+    h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    blockquote {
+        font-size: 16px;
+        margin: 20px 0 0;
+        padding-left: 15px;
+    }
 }
 .van {
     width: 100% !important;
