@@ -178,14 +178,49 @@ blockquote {
     border-left: 3px solid var(--primary);
 }
 
+.van {
+    width: 90%;
+    max-width: 1100px;
 
+    margin: 0 auto;
 
-#alvo {
-    display: flex;
-    align-items: flex-start;
-    padding: 100px 100px;
-    height: 100vh;
+    padding: 30px 0 100px;
 }
+
+.van-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px; 
+}
+.van-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.text-block {
+    padding: 25px;
+
+    border-left: 3px solid var(--primary);
+
+    background: #101116;
+    border-radius: 0 8px 8px 0;
+}
+
+.text-block p {
+    margin: 0;
+
+    font-size: 1rem;
+    line-height: 1.8;
+
+    color: var(--gray);
+    text-align: left;
+    font-weight: 400;
+}
+
+
+
 
 h3 {
     font-family: var(--title);
@@ -193,18 +228,70 @@ h3 {
     font-size: 42px;
     letter-spacing: 2px;
     font-weight: 400;
-    margin: 0 0 20px;
+    margin: 0 0 25px;
+    padding-bottom: 10px;
     color: var(--light);
-    border-bottom: 1px solid var(--gray);
+    border-bottom: 2px solid var(--gray);
 }
+
+
+.publico-intro {
+    color: var(--gray);
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.insights {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.insight {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #ffffff18;
+    transition: transform 0.3s ease;
+}
+
+.insight > span {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 4px;
+}
+
+.insight h4 {
+    margin: 0 0 7px;
+    color: var(--light);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.insight p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 
 
 .publico-alvo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
     align-items: center;
-    padding: 80px;
+    gap: 70px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 0;
 }
 
 .publico-texto p {
@@ -218,14 +305,27 @@ h3 {
 .publico-galeria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 14px;
 }
 
 .publico-galeria img {
     width: 100%;
-    height: 220px;
+    height: 210px;
+
     object-fit: cover;
-    border-radius: 12px;
+
+    border-radius: 8px;
+
+    opacity: 0.9;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.publico-galeria img:hover {
+    transform: scale(1.03);
+    opacity: 1;
 }
 
 .team {
@@ -263,19 +363,75 @@ h3 {
 .img-t:focus {
     outline: 2px solid blue;
 }
+
+.contato {
+    background-color: var(--quartenary);
+    padding: 100px 0;
+}
+
+.contato-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contato-intro {
+    color: var(--gray);
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.contato-card {
+    background: #101116;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.contato-card:hover {
+    border-left-color: var(--secondary);
+}
+
+.contato-card h4 {
+    margin: 0 0 5px;
+    color: var(--light);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contato-card .rm {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.contato-card .funcao {
+    margin: 0 0 15px;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.contato-card .email {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 14px;
+    word-break: break-all;
+    transition: color 0.25s ease;
+}
 footer {
         background-color: var(--tertiary);
         text-align: center;
         padding: 20px;
         font-size: 0.9rem;
         color: var(--gray);
-}
-
-
-@media (max-width: 768px) {
-
-    .publico-alvo {
-        grid-template-columns: 1fr;
-    }
-
 }
